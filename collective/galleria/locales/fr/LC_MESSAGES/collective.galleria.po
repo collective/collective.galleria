@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-06-29 11:11+0000\n"
+"POT-Creation-Date: 2011-06-29 14:32+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,53 +12,134 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0\n"
-"Language-Code: en\n"
-"Language-Name: English\n"
+"Language-Code: fr\n"
+"Language-Name: French\n"
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: collective.galleria\n"
 
-#. Default: "Auto scroll"
-#: ./i18n.py:9
-msgid "auto"
+#: ./i18n.py:93
+msgid "Fade"
 msgstr ""
 
-#. Default: "Image speed"
-#: ./i18n.py:6
-msgid "imgSpeed"
+#: ./i18n.py:97
+msgid "Fade slide"
 msgstr ""
 
-#. Default: "Display information"
-#: ./i18n.py:11
-msgid "info"
+#: ./i18n.py:94
+msgid "Flash"
 msgstr ""
 
-#. Default: "Information speed"
-#: ./i18n.py:12
-msgid "infoSpeed"
+#: ./i18n.py:95
+msgid "Pulse"
 msgstr ""
 
-#. Default: "Navigation hover"
-#: ./i18n.py:8
-msgid "navHover"
+#: ./i18n.py:96
+msgid "Slide"
 msgstr ""
 
-#. Default: "Navigation opacity"
-#: ./i18n.py:7
-msgid "navOpacity"
+#. Default: "auto play"
+#: ./i18n.py:5
+msgid "autoplay"
 msgstr ""
 
-#. Default: "Thumb scroll speed"
-#: ./i18n.py:13
-msgid "scrollSpeed"
-msgstr ""
-
-#. Default: "Scroll speed"
 #: ./i18n.py:10
-msgid "speed"
+msgid "autoplay_desc"
 msgstr ""
 
-#. Default: "Thumb opacity"
-#: ./i18n.py:14
-msgid "thumbOpacity"
+#. Default: "This option defines if the the carousel \n                        should follow the active image. You can control the\n                        speed of the animation with the carouselSpeed option.\n                        Please note that animating heavy thumbnails can affect\n                        your main image animation, so if you are seeing big \n                        lags in the main animation you can try to set this\n                        option to false."
+#: ./i18n.py:25
+msgid "carouseilFollow_desc"
+msgstr ""
+
+#. Default: "carousel"
+#: ./i18n.py:11
+msgid "carousel"
+msgstr ""
+
+#. Default: "carousel follow"
+#: ./i18n.py:23
+msgid "carouselFollow"
+msgstr ""
+
+#: ./i18n.py:21
+msgid "carousel_desc"
+msgstr ""
+
+#. Default: "Debug"
+#: ./i18n.py:50
+msgid "debug"
+msgstr ""
+
+#: ./i18n.py:52
+msgid "debug_desc"
+msgstr ""
+
+#. Default: "Height"
+#: ./i18n.py:90
+msgid "height"
+msgstr ""
+
+#. Default: "pause on interaction"
+#: ./i18n.py:54
+msgid "pauseOnInteraction"
+msgstr ""
+
+#: ./i18n.py:56
+msgid "pauseOnInteraction_desc"
+msgstr ""
+
+#. Default: "show Counter"
+#: ./i18n.py:38
+msgid "showCounter"
+msgstr ""
+
+#: ./i18n.py:40
+msgid "showCounter_desc"
+msgstr ""
+
+#. Default: "show Imagenav"
+#: ./i18n.py:42
+msgid "showImagenav"
+msgstr ""
+
+#: ./i18n.py:44
+msgid "showImagenav_desc"
+msgstr ""
+
+#. Default: "show Info"
+#: ./i18n.py:34
+msgid "showInfo"
+msgstr ""
+
+#: ./i18n.py:36
+msgid "showInfo_desc"
+msgstr ""
+
+#. Default: "transition"
+#: ./i18n.py:46
+msgid "transition"
+msgstr ""
+
+#. Default: "Transition speed"
+#: ./i18n.py:58
+msgid "transitionSpeed"
+msgstr ""
+
+#: ./i18n.py:60
+msgid "transitionSpeed_desc"
+msgstr ""
+
+#: ./i18n.py:48
+msgid "transition_desc"
+msgstr ""
+
+#. Default: "Width"
+#: ./i18n.py:86
+msgid "width"
+msgstr ""
+
+#. Default: "By default, Galleria fetches the width from the containing element. Bu you can use this option to set a gallery width manually."
+#: ./i18n.py:87
+msgid "width_desc"
 msgstr ""
 
