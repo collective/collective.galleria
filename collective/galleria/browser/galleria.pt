@@ -1,0 +1,20 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" encoding="utf-8"
+  metal:use-macro="here/main_template/macros/master" i18n:domain="nmd">
+  <body>
+   <div metal:fill-slot="content-core">
+    <style>#galleria{height:320px;}</style>
+    <tal:block define="galleryview nocall:context/@@gallery">
+        <div id="galleria">
+            <a href="" tal:attributes="href photo/url" tal:repeat="photo galleryview/photos">
+                <img tal:attributes="title photo/title; alt photo/description; src photo/thumb_url"/>
+            </a>
+        </div>
+    <script type="text/javascript" tal:content="view/settings_javascripts">
+    </script>
+    <script type="text/javascript">
+      $('#galleria').galleria(galleriaconfig);
+    </script>
+    </tal:block>
+   </div>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<configure xmlns="http://namespaces.zope.org/zope"
+           xmlns:browser="http://namespaces.zope.org/browser"
+           i18n_domain="collective.galleria">
+    <!-- -*- extra stuff goes here -*- -->
+  <include package="plone.app.contentmenu" />
+  <browser:resource
+    name="collective.galleria.classic.css"
+    file="galleria.classic.css"
+    layer="..interfaces.IGalleriaLayer"
+    />
+  <browser:resource
+    name="collective.galleria.classic.js"
+    file="galleria.classic.js"
+    layer="..interfaces.IGalleriaLayer"
+    />
+  <browser:resource
+    name="collective.galleria.js"
+    file="galleria.js"
+    layer="..interfaces.IGalleriaLayer"
+    />
+  <browser:resourceDirectory
+    name="collective.galleria"
+    directory="images"
+    layer="..interfaces.IGalleriaLayer"
+    />
+  <browser:page
+    name="galleria.html"
+    for="collective.gallery.interfaces.IFolder"
+    class=".galleria.Galleria"
+    menu="plone_displayviews"
+    title="Galleria"
+    permission="zope.Public"
+    template="galleria.pt"
+    layer="..interfaces.IGalleriaLayer"
+    />
+  <browser:page
+    name="galleria.html"
+    for="collective.gallery.interfaces.ITopic"
+    class=".galleria.Galleria"
+    menu="plone_displayviews"
+    title="Galleria"
+    permission="zope.Public"
+    template="galleria.pt"
+    layer="..interfaces.IGalleriaLayer"
+    />
+  <browser:page
+    name="galleria.html"
+    for="collective.gallery.interfaces.ILink"
+    class=".galleria.Galleria"
+    menu="plone_displayviews"
+    title="Galleria"
+    permission="zope.Public"
+    template="galleria.pt"
+    layer="..interfaces.IGalleriaLayer"
+    />
+
+</configure>
