@@ -2,7 +2,7 @@
   metal:use-macro="here/main_template/macros/master" i18n:domain="nmd">
   <body>
    <div metal:fill-slot="content-core">
-    <style>#galleria{height:320px;}</style>
+    <style tal:content="string:#galleria{height:${view/settings/height};}">#galleria{height:320px;}</style>
     <tal:block define="galleryview nocall:context/@@gallery">
         <div id="galleria">
             <a href="" tal:attributes="href photo/url" tal:repeat="photo galleryview/photos">
