@@ -67,10 +67,10 @@ transitionSpeed_default=u"""The milliseconds used in the animation when applying
             the transition. The higher number, the slower transition."""
 transitionSpeed_desc = _(u"transitionSpeed_desc", default=transitionSpeed_default)
 
-# = _(u"", default=u"")
-#_default=u""" """
-#_desc = _(u"_desc", default=_default)
-#
+toggleInfo = _(u"toggleInfo", default=u"toggleInfo")
+toggleInfo_default=u"""Set this to false if you want to show the caption all the time:"""
+toggleInfo_desc = _(u"toggleInfo_desc", default=toggleInfo_default)
+
 # = _(u"", default=u"")
 #_default=u""" """
 #_desc = _(u"_desc", default=_default)

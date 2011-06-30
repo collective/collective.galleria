@@ -33,6 +33,10 @@ class IGalleriaSettings(interface.Interface):
     showInfo = schema.Bool(title=i18n.showInfo,
                           description=i18n.showInfo_desc,
                           default=True)
+    
+    _toggleInfo = schema.Bool(title=i18n.toggleInfo,
+                              description=i18n.toggleInfo_desc,
+                              default=True)
 
     showCounter = schema.Bool(title=i18n.showCounter,
                           description=i18n.showCounter_desc,
