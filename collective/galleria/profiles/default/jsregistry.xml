@@ -4,5 +4,8 @@
  <javascript 
     id="++resource++collective.galleria.js"
     cacheable="True" compression="safe" cookable="True"/>
+ <javascript 
+    id="++resource++collective.galleria.classic.js"
+    cacheable="True" compression="safe" cookable="True"/>
 
 </object>
