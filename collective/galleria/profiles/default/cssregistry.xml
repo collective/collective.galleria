@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <object name="portal_css">
  <stylesheet title=""
-    id="collective.galleria.classic.css"
-    cacheable="True" compression="safe" cookable="True"
+    id="++resource++collective.galleria.classic.css"
+    cacheable="True" compression="safe" cookable="False"
     applyPrefix="True" />
 </object>
