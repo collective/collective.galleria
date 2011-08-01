@@ -1,8 +1,9 @@
 <?xml version="1.0"?>
 <metadata>
-  <version>1000</version>
+  <version>1010</version>
   <dependencies>
     <dependency>profile-collective.gallery:default</dependency>
     <dependency>profile-collective.configviews:default</dependency>
+    <dependency>profile-plone.app.registry:default</dependency>
   </dependencies>
 </metadata>

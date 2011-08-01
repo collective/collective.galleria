@@ -2,14 +2,15 @@
   metal:use-macro="here/main_template/macros/master" i18n:domain="nmd">
   <body>
    <div metal:fill-slot="content-core">
-    <style tal:content="string:#galleria{height:${view/settings/height};}">#galleria{height:320px;}</style>
     <tal:block define="galleryview nocall:context/@@gallery">
         <div id="galleria">
-            <a href="" tal:attributes="href photo/url" tal:repeat="photo galleryview/photos">
-                <img tal:attributes="title photo/title; alt photo/description; src photo/thumb_url"/>
-            </a>
+            <a href="" tal:attributes="href photo/url" tal:repeat="photo galleryview/photos"><img
+              tal:attributes="title photo/title; alt photo/description; src photo/thumb_url"/></a>
         </div>
-    <script type="text/javascript" tal:content="view/settings_javascripts">
+    <link rel="stylesheet" type="text/css" tal:attributes="href string:${view/portal_url}/++resource++collective.galleria.classic.css"/>
+    <script type="text/javascript" tal:content="view/settings_javascripts"></script>
+    <script type="text/javascript">
+      Galleria.loadTheme('++resource++collective.galleria.classic.js');
     </script>
     <script type="text/javascript">
       $('#galleria').galleria(galleriaconfig);

@@ -1,2 +1,2 @@
 from gallerialayerlayer import IGalleriaLayer
-
+from settings import IGalleriaSettings
