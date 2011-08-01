@@ -2,7 +2,7 @@ Introduction
 ============
 
 Galleria_ is a great JQuery slideshow plugin. This integration
-is based on collective.gallery and provide most of galleria option
+is based on collective.gallery and provide most of galleria options
 throw collective.configviews
 
 Options
@@ -75,8 +75,16 @@ During playback, Galleria will stop the playback
 if the user presses thumbnails or any other navigational links.
 If you dont want this behaviour, set this option to false.
 
+width
+-----
+
+By default, Galleria fetches the width from the containing element. Bu you can use this option to set a gallery width manually.
+
 height
 ------
+
+Galleria need a height to work properly. You can set the height using this option to make sure it has the correct height.
+If no height is set, Galleria will try to find the height of the parent container.
 
 debug
 -----
@@ -85,3 +93,26 @@ This option is for turning debug on/off. By default, Galleria
 displays errors by printing them out in the gallery container and
 sometimes throw exceptions. For deployment you can turn debug off
 to generate a more generic error message if a fatal error is raised.
+
+Notes
+=====
+
+Galleria in its way to manage theme parse all link tags to find the css attached
+to the theme. To make it work in production mode you must add themes javascript
+and css called by the template. 
+::
+    // look for manually added CSS
+    $('link').each(function( i, link ) {
+        reg = new RegExp( theme.css.replace('\+\+resource\+\+','\\+\\+resource\\+\\+') );
+        if ( reg.test( link.href ) ) {
+
+            // we found the css
+            css = true;
+            Galleria.theme = theme;
+
+            return false;
+        }
+    });
+
+As you can see the original code has been patched to support ++resource++ url.
+ 
