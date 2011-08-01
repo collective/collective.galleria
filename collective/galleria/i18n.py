@@ -32,15 +32,18 @@ carouselFollow_desc = _(u"carouseilFollow_desc",
                         option to false.""")
 
 showInfo = _(u"showInfo",default=u"show Info")
-showInfo_default = u"""Set this to false if you do not wish to display the caption."""
+showInfo_default = u"""Set this to false if you do not wish to display the
+                       caption."""
 showInfo_desc =_(u"showInfo_desc", default=showInfo_default)
 
 showCounter = _(u"showCounter", default=u"show Counter")
-showCounter_default=u"""Set this to false if you do not wish to display the counter."""
+showCounter_default=u"""Set this to false if you do not wish to display the
+                        counter."""
 showCounter_desc = _(u"showCounter_desc", default=showCounter_default)
 
 showImagenav = _(u"showImagenav", default=u"show Imagenav")
-showImagenav_default=u"""Set this to false if you do not wish to display the image navigation (next/prev arrows)."""
+showImagenav_default=u"""Set this to false if you do not wish to display the
+                         image navigation (next/prev arrows)."""
 showImagenav_desc = _(u"showImagenav_desc", default=showImagenav_default)
 
 transition = _(u"transition", default=u"transition")
@@ -53,14 +56,16 @@ debug = _(u"debug", default=u"Debug")
 debug_default=u"""This option is for turning debug on/off. By default, Galleria
             displays errors by printing them out in the gallery container and
             sometimes throw exceptions. For deployment you can turn debug off
-            to generate a more generic error message if a fatal error is raised."""
+            to generate a more generic error message if a fatal error is
+            raised."""
 debug_desc = _(u"debug_desc", default=debug_default)
 
 pauseOnInteraction = _(u"pauseOnInteraction", default=u"pause on interaction")
 pauseOnInteraction_default=u"""During playback, Galleria will stop the playback
             if the user presses thumbnails or any other navigational links.
             If you dont want this behaviour, set this option to false."""
-pauseOnInteraction_desc = _(u"pauseOnInteraction_desc", default=pauseOnInteraction_default)
+pauseOnInteraction_desc = _(u"pauseOnInteraction_desc",
+                            default=pauseOnInteraction_default)
 
 transitionSpeed = _(u"transitionSpeed", default=u"Transition speed")
 transitionSpeed_default=u"""The milliseconds used in the animation when applying
@@ -68,7 +73,8 @@ transitionSpeed_default=u"""The milliseconds used in the animation when applying
 transitionSpeed_desc = _(u"transitionSpeed_desc", default=transitionSpeed_default)
 
 toggleInfo = _(u"toggleInfo", default=u"toggleInfo")
-toggleInfo_default=u"""Set this to false if you want to show the caption all the time:"""
+toggleInfo_default=u"""Set this to false if you want to show the caption
+                       all the time:"""
 toggleInfo_desc = _(u"toggleInfo_desc", default=toggleInfo_default)
 
 # = _(u"", default=u"")
@@ -93,9 +99,16 @@ toggleInfo_desc = _(u"toggleInfo_desc", default=toggleInfo_default)
 
 width = _(u"width",default="Width")
 width_desc = _(u"width_desc",
-               default=u"""By default, Galleria fetches the width from the containing element. Bu you can use this option to set a gallery width manually.""")
+               default=u"""By default, Galleria fetches the width from the
+               containing element. Bu you can use this option to set a gallery
+               width manually.""")
 
 height = _(u"height",default="Height")
+height_desc = _(u"height_desc",
+              default=u"""Galleria need a height to work properly. You can set
+              the height using this option to make sure it has the correct
+              height. If no height is set, Galleria will try to find the height
+              of the parent container.""")
 
 #vocabulary
 fade = _(u'Fade')
