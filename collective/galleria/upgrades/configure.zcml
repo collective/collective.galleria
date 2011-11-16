@@ -4,6 +4,14 @@
   i18n_domain="collective.galleria">
 
   <gs:upgradeStep
+    title="rename view from galleria.html to galleria_view"
+    description=""
+    source="1010"
+    destination="1020"
+    handler=".v1020.upgrade"
+    profile="collective.galleria:default"/>
+
+  <gs:upgradeStep
     title="Upgrade collective.galleria 1010"
     description=""
     source="1000"
