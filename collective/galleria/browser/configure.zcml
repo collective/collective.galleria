@@ -4,26 +4,6 @@
 
   <include package="plone.app.contentmenu" />
 
-  <browser:resource
-    name="collective.galleria.classic.css"
-    file="galleria.classic.css"
-    layer="collective.galleria.interfaces.IGalleriaLayer"
-    />
-  <browser:resource
-    name="collective.galleria.classic.js"
-    file="galleria.classic.js"
-    layer="collective.galleria.interfaces.IGalleriaLayer"
-    />
-  <browser:resource
-    name="collective.galleria.js"
-    file="galleria.js"
-    layer="collective.galleria.interfaces.IGalleriaLayer"
-    />
-  <browser:resourceDirectory
-    name="collective.galleria"
-    directory="images"
-    layer="collective.galleria.interfaces.IGalleriaLayer"
-    />
   <browser:page
     name="galleria_view"
     for="collective.gallery.interfaces.IFolder"

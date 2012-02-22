@@ -27,6 +27,7 @@ setup(name='collective.galleria',
           'setuptools',
           'collective.gallery',
           'collective.configviews',
+          'collective.js.galleria',
           # -*- Extra requirements: -*-
       ],
       entry_points="""
