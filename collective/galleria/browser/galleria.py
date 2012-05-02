@@ -38,7 +38,12 @@ class Galleria(ConfigurableBaseView):
         #plone.app.registry
         settings = super(Galleria, self).settings
         settings['_toggleInfo'] = settings['toggleInfo']
+
         if settings['width'] == 0 :
             #set to 100%
             del settings['width']
+
+        if settings['height'] == 0:
+            del settings['height']
+
         return settings

@@ -55,11 +55,16 @@ class IGalleriaSettings(interface.Interface):
 
     width = schema.Int(title=i18n.width,
                            description=i18n.width_desc,
-                           default=550)
+                           required=False)
 
     height = schema.Int(title=i18n.height,
                         description=i18n.height_desc,
-                        default=320)
+                        default=350,
+                        required=False)
+
+    responsive = schema.Bool(title=i18n.responsive,
+                             description=i18n.responsive_desc,
+                             default=False)
 
     debug = schema.Bool(title=i18n.debug,
                         description=i18n.debug_desc,
