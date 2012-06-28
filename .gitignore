@@ -1,8 +1,12 @@
+src/
+var/
 *.mo
 *.egg-info
 *.egg
 *.EGG
 *.EGG-INFO
+.pydevproject
+.project
 bin
 build
 develop-eggs

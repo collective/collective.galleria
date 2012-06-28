@@ -97,13 +97,13 @@ toggleInfo_desc = _(u"toggleInfo_desc", default=toggleInfo_default)
 #_default=u""" """
 #_desc = _(u"_desc", default=_default)
 
-width = _(u"width",default="Width")
+width = _(u"width", default="Width")
 width_desc = _(u"width_desc",
                default=u"""By default, Galleria fetches the width from the
                containing element. Bu you can use this option to set a gallery
                width manually.""")
 
-height = _(u"height",default="Height")
+height = _(u"height", default="Height")
 height_desc = _(u"height_desc",
               default=u"""Galleria need a height to work properly. You can set
               the height using this option to make sure it has the correct
@@ -112,13 +112,18 @@ height_desc = _(u"height_desc",
 
 #vocabulary
 fade = _(u'Fade')
-flash= _(u'Flash')
+flash = _(u'Flash')
 pulse = _(u'Pulse')
 slide = _(u'Slide')
 fadeslide = _(u'Fade slide')
 
 responsive = _(u'Responsive')
 responsive_desc = _(u"""This option sets thew Gallery in responsive mode. That
- means that it will resize the entire container if your CSS is dynamic. In other
- words, you can add media queries or dynamic proportions in your CSS and the 
- gallery will follow these proportions as the window resizes.""")
+ means that it will resize the entire container if your CSS is dynamic. In
+ other words, you can add media queries or dynamic proportions in your CSS and
+ the gallery will follow these proportions as the window resizes.""")
+
+lightbox = _(u"Lightbox")
+lightbox_desc = _(u"""This option acts as a helper for attaching a lightbox
+ when the user clicks on an image. If you have a link defined for the image,
+ the link will take precedence.""")

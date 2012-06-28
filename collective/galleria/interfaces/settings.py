@@ -11,16 +11,19 @@ transitions = SimpleVocabulary(
      SimpleTerm(value='slide', title=i18n.slide),
      SimpleTerm(value='fadeslide', title=i18n.fadeslide)])
 
+
 class IGalleriaSettings(interface.Interface):
     """http://galleria.aino.se/docs/1.2/options/
     """
 
-    autoplay   = schema.Bool(title=i18n.autoplay,
+    autoplay = schema.Bool(title=i18n.autoplay,
                              description=i18n.autoplay_desc,
                              default=True)
-    carousel   = schema.Bool(title=i18n.carousel,
+
+    carousel = schema.Bool(title=i18n.carousel,
                              description=i18n.carousel_desc,
                              default=True)
+
     carouselFollow = schema.Bool(title=i18n.carouselFollow,
                                  description=i18n.carouselFollow_desc,
                                  default=True)
@@ -28,7 +31,7 @@ class IGalleriaSettings(interface.Interface):
     showInfo = schema.Bool(title=i18n.showInfo,
                           description=i18n.showInfo_desc,
                           default=True)
-    
+
     toggleInfo = schema.Bool(title=i18n.toggleInfo,
                               description=i18n.toggleInfo_desc,
                               default=True)
@@ -66,7 +69,6 @@ class IGalleriaSettings(interface.Interface):
                              description=i18n.responsive_desc,
                              default=False)
 
-    debug = schema.Bool(title=i18n.debug,
-                        description=i18n.debug_desc,
-                        default=False)
-
+    lightbox = schema.Bool(title=i18n.lightbox,
+                           description=i18n.lightbox_desc,
+                           default=False)

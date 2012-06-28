@@ -4,7 +4,7 @@ Changelog
 1.2 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Add lightbox option.
 
 
 1.1 (2012-05-11)
