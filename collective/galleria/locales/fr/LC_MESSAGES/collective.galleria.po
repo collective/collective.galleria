@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-06-29 14:32+0000\n"
+"POT-Creation-Date: 2012-07-17 10:50+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,129 +17,159 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: collective.galleria\n"
 
-#: ./i18n.py:93
+#: ./i18n.py:112
 msgid "Fade"
 msgstr ""
 
-#: ./i18n.py:97
+#: ./i18n.py:116
 msgid "Fade slide"
 msgstr ""
 
-#: ./i18n.py:94
+#: ./i18n.py:113
 msgid "Flash"
 msgstr ""
 
-#: ./i18n.py:95
+#: ./i18n.py:125
+msgid "Lightbox"
+msgstr ""
+
+#: ./i18n.py:114
 msgid "Pulse"
 msgstr ""
 
-#: ./i18n.py:96
+#: ./i18n.py:118
+msgid "Responsive"
+msgstr ""
+
+#: ./i18n.py:115
 msgid "Slide"
 msgstr ""
 
 #. Default: "auto play"
 #: ./i18n.py:5
 msgid "autoplay"
-msgstr ""
+msgstr "lecture automatique"
 
-#: ./i18n.py:10
+#: ./i18n.py:8
 msgid "autoplay_desc"
-msgstr ""
+msgstr "Si oui, le diaporama démarrera avec un intervalle de 5 secondes."
 
 #. Default: "This option defines if the the carousel \n                        should follow the active image. You can control the\n                        speed of the animation with the carouselSpeed option.\n                        Please note that animating heavy thumbnails can affect\n                        your main image animation, so if you are seeing big \n                        lags in the main animation you can try to set this\n                        option to false."
-#: ./i18n.py:25
+#: ./i18n.py:23
 msgid "carouseilFollow_desc"
-msgstr ""
+msgstr "Cette option définit si le carousel doit suivre la photo active."
 
 #. Default: "carousel"
-#: ./i18n.py:11
+#: ./i18n.py:9
 msgid "carousel"
-msgstr ""
+msgstr "carrousel"
 
 #. Default: "carousel follow"
-#: ./i18n.py:23
-msgid "carouselFollow"
-msgstr ""
-
 #: ./i18n.py:21
+msgid "carouselFollow"
+msgstr "carrousel dynamique"
+
+#: ./i18n.py:19
 msgid "carousel_desc"
-msgstr ""
+msgstr "La galerie dispose d'un carrousel horizontal. Cette option permet de l'activer / le désactiver. Le carrousel s'applique au vignette automatiquementsi le taille totale des vignettes dépasse la taille de la galerie. Désactiverce comportement force l'affichage de l'ensemble des vignettes sans carrousel."
 
 #. Default: "Debug"
-#: ./i18n.py:50
+#: ./i18n.py:53
 msgid "debug"
 msgstr ""
 
-#: ./i18n.py:52
+#: ./i18n.py:59
 msgid "debug_desc"
 msgstr ""
 
 #. Default: "Height"
-#: ./i18n.py:90
+#: ./i18n.py:104
 msgid "height"
-msgstr ""
+msgstr "hauteur"
+
+#. Default: "Galleria need a height to work properly. You can set\n              the height using this option to make sure it has the correct\n              height. If no height is set, Galleria will try to find the height\n              of the parent container."
+#: ./i18n.py:105
+msgid "height_desc"
+msgstr "La galerie nécessite une hauteur pour fonctionner correctement. Si cetteoption n'est pas préciser la hauteur doit l'être par la charte graphique (css)."
+
+#: ./i18n.py:129
+msgid "lightbox_desc"
+msgstr "Cette option rend les photos cliquables. La photo prend alors toute la place disponible et le visiteur peut toujours naviguer parmis les photos disponibles."
 
 #. Default: "pause on interaction"
-#: ./i18n.py:54
+#: ./i18n.py:61
 msgid "pauseOnInteraction"
-msgstr ""
+msgstr "pause sur intéraction"
 
-#: ./i18n.py:56
+#: ./i18n.py:65
 msgid "pauseOnInteraction_desc"
-msgstr ""
+msgstr "Durant le défilement des photos la galerie s'arrêtera si l'utilisateurclique sur une vignette ou un contrôle de navigation."
+
+#: ./i18n.py:123
+msgid "responsive_desc"
+msgstr "Cette option active le mode responsive de la galerie. Utile si le site est responsive (fonctionne avec des media queries)"
 
 #. Default: "show Counter"
-#: ./i18n.py:38
+#: ./i18n.py:37
 msgid "showCounter"
-msgstr ""
+msgstr "afficher le compteur"
 
 #: ./i18n.py:40
 msgid "showCounter_desc"
-msgstr ""
+msgstr "Vous pouvez activer / désactiver le compteur de photos avec cette option."
 
 #. Default: "show Imagenav"
 #: ./i18n.py:42
 msgid "showImagenav"
-msgstr ""
+msgstr "afficher flèches de navigation"
 
-#: ./i18n.py:44
+#: ./i18n.py:45
 msgid "showImagenav_desc"
-msgstr ""
+msgstr "activer / désactiver les flèches de navigations 'photo précédente' et 'photo suivante'."
 
 #. Default: "show Info"
-#: ./i18n.py:34
+#: ./i18n.py:32
 msgid "showInfo"
-msgstr ""
+msgstr "afficher Info"
 
-#: ./i18n.py:36
+#: ./i18n.py:35
 msgid "showInfo_desc"
-msgstr ""
+msgstr "afficher le contrôle de la légende des photos (petit i en haut à gauche)qui permet au visiteur d'afficher / cacher la légende de la photo"
+
+#. Default: "toggleInfo"
+#: ./i18n.py:73
+msgid "toggleInfo"
+msgstr "basculer Info"
+
+#: ./i18n.py:76
+msgid "toggleInfo_desc"
+msgstr "En désactivant cette option la légende sera toujours affichée."
 
 #. Default: "transition"
-#: ./i18n.py:46
+#: ./i18n.py:47
 msgid "transition"
-msgstr ""
+msgstr "transition"
 
 #. Default: "Transition speed"
-#: ./i18n.py:58
+#: ./i18n.py:68
 msgid "transitionSpeed"
-msgstr ""
+msgstr "vitesse de transition"
 
-#: ./i18n.py:60
+#: ./i18n.py:71
 msgid "transitionSpeed_desc"
-msgstr ""
+msgstr "Temps en millisecondes utilisé dans l'animation de transition.Plus le chiffre est grand plus la transition est lente."
 
-#: ./i18n.py:48
+#: ./i18n.py:51
 msgid "transition_desc"
-msgstr ""
+msgstr "La transition qui est utilisée quand les photos sont affichées."
 
 #. Default: "Width"
-#: ./i18n.py:86
+#: ./i18n.py:98
 msgid "width"
-msgstr ""
+msgstr "largeur"
 
-#. Default: "By default, Galleria fetches the width from the containing element. Bu you can use this option to set a gallery width manually."
-#: ./i18n.py:87
+#. Default: "By default, Galleria fetches the width from the\n               containing element. Bu you can use this option to set a gallery\n               width manually."
+#: ./i18n.py:99
 msgid "width_desc"
-msgstr ""
+msgstr "Par défaut, la galerie calcule la largeur par rapport à la place disponible.Vous pouvez mettre 0 pour ne pas utiliser cette option"
 

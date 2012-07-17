@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-06-29 14:32+0000\n"
+"POT-Creation-Date: 2012-07-17 10:50+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,23 +17,31 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: collective.galleria\n"
 
-#: ./i18n.py:93
+#: ./i18n.py:112
 msgid "Fade"
 msgstr ""
 
-#: ./i18n.py:97
+#: ./i18n.py:116
 msgid "Fade slide"
 msgstr ""
 
-#: ./i18n.py:94
+#: ./i18n.py:113
 msgid "Flash"
 msgstr ""
 
-#: ./i18n.py:95
+#: ./i18n.py:125
+msgid "Lightbox"
+msgstr ""
+
+#: ./i18n.py:114
 msgid "Pulse"
 msgstr ""
 
-#: ./i18n.py:96
+#: ./i18n.py:118
+msgid "Responsive"
+msgstr ""
+
+#: ./i18n.py:115
 msgid "Slide"
 msgstr ""
 
@@ -42,54 +50,67 @@ msgstr ""
 msgid "autoplay"
 msgstr ""
 
-#: ./i18n.py:10
+#: ./i18n.py:8
 msgid "autoplay_desc"
 msgstr ""
 
 #. Default: "This option defines if the the carousel \n                        should follow the active image. You can control the\n                        speed of the animation with the carouselSpeed option.\n                        Please note that animating heavy thumbnails can affect\n                        your main image animation, so if you are seeing big \n                        lags in the main animation you can try to set this\n                        option to false."
-#: ./i18n.py:25
+#: ./i18n.py:23
 msgid "carouseilFollow_desc"
 msgstr ""
 
 #. Default: "carousel"
-#: ./i18n.py:11
+#: ./i18n.py:9
 msgid "carousel"
 msgstr ""
 
 #. Default: "carousel follow"
-#: ./i18n.py:23
+#: ./i18n.py:21
 msgid "carouselFollow"
 msgstr ""
 
-#: ./i18n.py:21
+#: ./i18n.py:19
 msgid "carousel_desc"
 msgstr ""
 
 #. Default: "Debug"
-#: ./i18n.py:50
+#: ./i18n.py:53
 msgid "debug"
 msgstr ""
 
-#: ./i18n.py:52
+#: ./i18n.py:59
 msgid "debug_desc"
 msgstr ""
 
 #. Default: "Height"
-#: ./i18n.py:90
+#: ./i18n.py:104
 msgid "height"
 msgstr ""
 
+#. Default: "Galleria need a height to work properly. You can set\n              the height using this option to make sure it has the correct\n              height. If no height is set, Galleria will try to find the height\n              of the parent container."
+#: ./i18n.py:105
+msgid "height_desc"
+msgstr ""
+
+#: ./i18n.py:129
+msgid "lightbox_desc"
+msgstr ""
+
 #. Default: "pause on interaction"
-#: ./i18n.py:54
+#: ./i18n.py:61
 msgid "pauseOnInteraction"
 msgstr ""
 
-#: ./i18n.py:56
+#: ./i18n.py:65
 msgid "pauseOnInteraction_desc"
 msgstr ""
 
+#: ./i18n.py:123
+msgid "responsive_desc"
+msgstr ""
+
 #. Default: "show Counter"
-#: ./i18n.py:38
+#: ./i18n.py:37
 msgid "showCounter"
 msgstr ""
 
@@ -102,44 +123,53 @@ msgstr ""
 msgid "showImagenav"
 msgstr ""
 
-#: ./i18n.py:44
+#: ./i18n.py:45
 msgid "showImagenav_desc"
 msgstr ""
 
 #. Default: "show Info"
-#: ./i18n.py:34
+#: ./i18n.py:32
 msgid "showInfo"
 msgstr ""
 
-#: ./i18n.py:36
+#: ./i18n.py:35
 msgid "showInfo_desc"
 msgstr ""
 
+#. Default: "toggleInfo"
+#: ./i18n.py:73
+msgid "toggleInfo"
+msgstr ""
+
+#: ./i18n.py:76
+msgid "toggleInfo_desc"
+msgstr ""
+
 #. Default: "transition"
-#: ./i18n.py:46
+#: ./i18n.py:47
 msgid "transition"
 msgstr ""
 
 #. Default: "Transition speed"
-#: ./i18n.py:58
+#: ./i18n.py:68
 msgid "transitionSpeed"
 msgstr ""
 
-#: ./i18n.py:60
+#: ./i18n.py:71
 msgid "transitionSpeed_desc"
 msgstr ""
 
-#: ./i18n.py:48
+#: ./i18n.py:51
 msgid "transition_desc"
 msgstr ""
 
 #. Default: "Width"
-#: ./i18n.py:86
+#: ./i18n.py:98
 msgid "width"
 msgstr ""
 
-#. Default: "By default, Galleria fetches the width from the containing element. Bu you can use this option to set a gallery width manually."
-#: ./i18n.py:87
+#. Default: "By default, Galleria fetches the width from the\n               containing element. Bu you can use this option to set a gallery\n               width manually."
+#: ./i18n.py:99
 msgid "width_desc"
 msgstr ""
 

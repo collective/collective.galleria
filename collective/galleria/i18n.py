@@ -1,12 +1,10 @@
 from zope.i18nmessageid import MessageFactory
 
-_ = messageFactory = MessageFactory('collective.tinyslideshow')
+_ = messageFactory = MessageFactory('collective.galleria')
 
 autoplay = _(u"autoplay",default=u"auto play")
 autoplay_desc_default=u"""If true, this will start playing the slideshow with
-                 5 seconds interval (default). If you set this to any number,
-                 f.ex 4000, it will start playing with that interval 
-                 (in milliseconds)"""
+                 5 seconds interval"""
 autoplay_desc = _(u"autoplay_desc",default=autoplay_desc_default)
 carousel = _(u"carousel",default=u"carousel")
 carousel_desc_default=u"""Galleria comes with a built-in horizontal carousel.
@@ -118,12 +116,14 @@ slide = _(u'Slide')
 fadeslide = _(u'Fade slide')
 
 responsive = _(u'Responsive')
-responsive_desc = _(u"""This option sets thew Gallery in responsive mode. That
+responsive_desc_default = u"""This option sets thew Gallery in responsive mode. That
  means that it will resize the entire container if your CSS is dynamic. In
  other words, you can add media queries or dynamic proportions in your CSS and
- the gallery will follow these proportions as the window resizes.""")
+ the gallery will follow these proportions as the window resizes."""
+responsive_desc = _(u"responsive_desc", default=responsive_desc_default)
 
 lightbox = _(u"Lightbox")
-lightbox_desc = _(u"""This option acts as a helper for attaching a lightbox
+lightbox_desc_default = u"""This option acts as a helper for attaching a lightbox
  when the user clicks on an image. If you have a link defined for the image,
- the link will take precedence.""")
+ the link will take precedence."""
+lightbox_desc = _(u"lightbox_desc", default=lightbox_desc_default)
