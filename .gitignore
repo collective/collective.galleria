@@ -23,4 +23,5 @@ dist
 *.pyc
 *.pyo
 *.tmp*
-
+src
+.settings
