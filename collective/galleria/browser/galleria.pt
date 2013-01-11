@@ -1,7 +1,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" encoding="utf-8"
   metal:use-macro="here/main_template/macros/master" i18n:domain="nmd">
   <body>
-   <div metal:fill-slot="content-core">
+
+  <metal:content-core fill-slot="content-core">
+    <metal:block define-macro="content-core">
+
+   <div>
     <tal:block define="galleryview nocall:context/@@gallery">
         <div id="galleria">
             <a href="" tal:attributes="href photo/url" tal:repeat="photo galleryview/photos"><img
@@ -17,5 +21,9 @@
     </script>
     </tal:block>
    </div>
+
+    </metal:block>
+  </metal:content-core>
+
   </body>
 </html>
