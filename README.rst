@@ -3,7 +3,7 @@ Introduction
 
 Galleria_ is a great JQuery slideshow plugin. This integration
 is based on collective.gallery and provide most of galleria options
-throw collective.configviews
+through collective.configviews
 
 Options
 =======
@@ -11,18 +11,18 @@ Options
 autoplay
 --------
 
-If true, this will start playing the slideshow with
+If true, this will start playing the slideshow with a
 5 seconds interval (default). If you set this to any number,
-f.ex 4000, it will start playing with that interval 
+ie: 4000, it will start playing with that interval 
 (in milliseconds)
 
 carousel
 --------
 
 Galleria comes with a built-in horizontal carousel.
-This options is for activating / deactivating the
+This option is for activating / deactivating the
 carousel feature. Setting this to true, the carousel
-will be automatically applied if the total som of
+will be automatically applied if the total sum of
 thumbnails width exceeds the thumbnail container.
 This will be re-calculaed on resize.
 
@@ -66,7 +66,7 @@ transitionSpeed
 ---------------
 
 The milliseconds used in the animation when applying
-the transition. The higher number, the slower transition.
+the transition. The higher the number, the slower is the transition.
 
 pauseOnInteraction
 ------------------
@@ -78,12 +78,12 @@ If you dont want this behaviour, set this option to false.
 width
 -----
 
-By default, Galleria fetches the width from the containing element. Bu you can use this option to set a gallery width manually.
+By default, Galleria fetches the width from the containing element. But you can use this option to manually set a gallery width.
 
 height
 ------
 
-Galleria need a height to work properly. You can set the height using this option to make sure it has the correct height.
+Galleria needs a height to work properly. You can set the height using this option to make sure it has the correct height.
 If no height is set, Galleria will try to find the height of the parent container.
 
 debug
@@ -97,9 +97,9 @@ to generate a more generic error message if a fatal error is raised.
 Notes
 =====
 
-Galleria in its way to manage theme parse all link tags to find the css attached
-to the theme. To make it work in production mode you must add themes javascript
-and css called by the template. 
+In its way to manage themes, Galleria parses all link tags to find the css attached
+to the theme. To make it work in production mode you must add theme's css and
+javascript called by the template. 
 ::
 
     // look for manually added CSS
