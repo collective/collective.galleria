@@ -1,29 +1,30 @@
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" encoding="utf-8"
-  metal:use-macro="here/main_template/macros/master" i18n:domain="nmd">
-  <body>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="nmd">
+<body>
+<metal:content-core fill-slot="content-core">
+  <metal:block define-macro="content-core">
 
-  <metal:content-core fill-slot="content-core">
-    <metal:block define-macro="content-core">
-
-   <div>
-    <tal:block define="galleryview nocall:context/@@gallery">
-        <div id="galleria">
-            <a href="" tal:attributes="href photo/url" tal:repeat="photo galleryview/photos"><img
-              tal:attributes="title photo/title; alt photo/description; src photo/thumb_url"/></a>
-        </div>
-    <link rel="stylesheet" type="text/css" tal:attributes="href string:${view/portal_url}/++resource++collective.galleria.classic.css"/>
-    <script type="text/javascript" tal:content="view/settings_javascripts"></script>
-    <script type="text/javascript">
-      Galleria.loadTheme('++resource++collective.galleria.classic.js');
-    </script>
-    <script type="text/javascript">
-      Galleria.configure(galleriaconfig); Galleria.run('#galleria');
-    </script>
-    </tal:block>
+    <div tal:define="galleryview nocall:context/@@gallery">
+      <div id="galleria">
+        <a href="" tal:attributes="href photo/url" tal:repeat="photo galleryview/photos"><img
+            tal:attributes="title photo/title; alt photo/description; src photo/thumb_url"/></a>
+      </div>
+      <link rel="stylesheet" type="text/css" tal:attributes="href string:${view/portal_url}/++resource++collective.galleria.classic.css"/>
+      <script type="text/javascript" tal:content="view/settings_javascripts"></script>
+      <script type="text/javascript">
+        Galleria.loadTheme('++resource++collective.galleria.classic.js');
+      </script>
+      <script type="text/javascript">
+        Galleria.configure(galleriaconfig); Galleria.run('#galleria');
+      </script>
    </div>
 
-    </metal:block>
-  </metal:content-core>
-
-  </body>
+  </metal:block>
+</metal:content-core>
+</body>
 </html>
