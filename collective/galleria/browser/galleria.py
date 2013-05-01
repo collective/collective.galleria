@@ -5,10 +5,11 @@ from collective.configviews import ConfigurableBaseView
 
 from collective.galleria import interfaces
 
+
 class Galleria(ConfigurableBaseView):
     settings_schema = interfaces.IGalleriaSettings
     jsvarname = 'galleriaconfig'
-    settings_providers = ('site.plone.app.registry','context.zope.annotation')
+    settings_providers = ('site.plone.app.registry', 'context.zope.annotation')
     jsdata = 'galleriadata'
 
     def gallery_data(self):
@@ -27,11 +28,6 @@ class Galleria(ConfigurableBaseView):
             data.append(info)
         return self.jsdata + '= ' + json.dumps(data)
 
-    def portal_url(self):
-        portal_state = component.getMultiAdapter((self.context, self.request),
-                                                 name="plone_portal_state")
-        return portal_state.portal_url()
-
     @property
     def settings(self):
         #override settings to support _toggleInfo that is not supported by
@@ -39,7 +35,7 @@ class Galleria(ConfigurableBaseView):
         settings = super(Galleria, self).settings
         settings['_toggleInfo'] = settings['toggleInfo']
 
-        if settings['width'] == 0 :
+        if settings['width'] == 0:
             #set to 100%
             del settings['width']
 
