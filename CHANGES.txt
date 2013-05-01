@@ -4,7 +4,7 @@ Changelog
 1.2.3 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Fix folder_full_view when have many galleria. Use @@uid.
 
 
 1.2.2 (2013-05-01)

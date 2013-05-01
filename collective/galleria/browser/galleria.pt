@@ -10,19 +10,16 @@
   <metal:block define-macro="content-core">
 
     <div tal:define="galleryview nocall:context/@@gallery;
-                     portal_url context/@@plone_portal_state/portal_url;">
-      <div id="galleria">
+                     portal_url context/@@plone_portal_state/portal_url;
+                     galleria_id string:uuid-${context/@@uuid};">
+      <div tal:attributes="id galleria_id">
         <a href="" tal:attributes="href photo/url" tal:repeat="photo galleryview/photos"><img
             tal:attributes="title photo/title; alt photo/description; src photo/thumb_url"/></a>
       </div>
       <link rel="stylesheet" type="text/css" tal:attributes="href string:${portal_url}/++resource++collective.galleria.classic.css"/>
       <script type="text/javascript" tal:content="view/settings_javascripts|context/@@galleria_view/settings_javascripts"></script>
-      <script type="text/javascript">
-        Galleria.loadTheme('++resource++collective.galleria.classic.js');
-      </script>
-      <script type="text/javascript">
-        Galleria.configure(galleriaconfig); Galleria.run('#galleria');
-      </script>
+      <script type="text/javascript">Galleria.loadTheme('++resource++collective.galleria.classic.js');</script>
+      <script type="text/javascript" tal:content="string:Galleria.configure(galleriaconfig); Galleria.run('#${galleria_id}');"></script>
    </div>
 
   </metal:block>
